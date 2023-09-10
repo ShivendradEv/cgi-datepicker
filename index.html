@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker</title>
+    <link rel="stylesheet" href="datepicker.css">
+</head>
+<body>
+    <div class="datepicker">
+        <div style="display: flex;">
+            <input type="text" id="dateInput" placeholder="mm/dd/yyyy">
+            <img src="calendar.png" alt="calendar icon" class="calendar-img" style="width: 20px;">
+        </div>
+        <div class="calendar" style="display: none;">
+            <div class="calendar-header">
+                <button class="prev">&lt;</button>
+                <div class="month-year" id="monthYear"></div> 
+                <button class="next">&gt;</button>
+            </div>
+            <div class="days">
+                <div class="day">Sun</div>
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thu</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+            </div>
+            <div class="days" id="days"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="datepicker.js"></script>
+</body>
+</html>

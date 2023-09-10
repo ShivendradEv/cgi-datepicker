@@ -1,0 +1,74 @@
+/* Basic CSS styles */
+.datepicker {
+    position: relative;
+    width: 280px;
+}
+.datepicker input {
+    width: 100%;
+}
+
+.calendar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+.calendar .calendar-header {
+    position: relative;
+    text-align: center;
+}
+.calendar button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.calendar button.next {
+    left: auto;
+    right: 0
+}
+
+.calendar .prev, 
+.calendar .next {
+    float: left;
+}
+
+.calendar .month-year {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.calendar .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar #days .day:hover {
+    background: #ccc;
+}
+
+.calendar .day {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.calendar .todayDate {
+    background-color: #0074cc !important;
+    color: #fff;
+}
+
+.calendar .selected {
+    background-color: red;
+    color: #fff;
+}
+
+.calendar .disabled {
+    opacity: .3;
+}
