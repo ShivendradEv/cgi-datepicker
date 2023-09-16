@@ -133,9 +133,9 @@ dateInput.addEventListener('input', function (event) {
         inputValue = inputValue.slice(0, 8);
     }
 
-    if (inputValue.length >= 2 && inputValue.length < 4) {
+    if (inputValue.length >= 3 && inputValue.length < 4) {
         inputValue = inputValue.replace(/^(\d{2})/, '$1/');
-    } else if (inputValue.length >= 4 && inputValue.length < 6) {
+    } else if (inputValue.length >= 5 && inputValue.length < 6) {
         inputValue = inputValue.replace(/^(\d{2})(\d{2})/, '$1/$2/');
     } else if (inputValue.length >= 6) {
         inputValue = inputValue.replace(/^(\d{2})(\d{2})(\d{0,4})/, '$1/$2/$3');
